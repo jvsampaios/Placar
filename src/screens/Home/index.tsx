@@ -56,10 +56,10 @@ export function Home() {
 					<Stopwatch start={start} reset={!start} options={options}/>
 				</ViewRow>
 			</TimeView>
-			<Title>Semifinal do torneio</Title>
+			<Title>Torneio de Ping Pong</Title>
 			<ViewRow style={{paddingHorizontal: '20%', justifyContent: 'space-between'}}>
 				<Placar style={{width: '50%'}} onPress={() => setPoint1(point1 + 1)}>
-					<NomeJogador>Windson</NomeJogador>
+					<NomeJogador>Jogador 1</NomeJogador>
 					<ViewRow style={{width: '100%'}}>
 						<View style={{width: '30%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
 							<TextPlacar1>Games</TextPlacar1>
@@ -70,7 +70,7 @@ export function Home() {
 				</Placar>
 				<Divider/> 
 				<Placar style={{width: '50%'}} onPress={() => setPoint2(point2 + 1)}>
-					<NomeJogador>Trinta</NomeJogador>
+					<NomeJogador>Jogador 2</NomeJogador>
 					<ViewRow style={{width: '100%'}}>
 						<TextPlacar2 style={{display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: 80, width: '70%'}}>{point2}</TextPlacar2>
 						<View style={{width: '30%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
