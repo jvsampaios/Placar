@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import { Container, Divider, NomeJogador, Placar, ResetScore, StartGame, TextPlacar1, TextPlacar2, Time, TimeView, Title, ViewPlacar, ViewRow } from './styles';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 import { Text, View, TextInput, Keyboard } from 'react-native';
 import { Stopwatch, Timer } from 'react-native-stopwatch-timer';
 
 export function Home() {
-	Icon.loadFont();
-  
+	
 	const [point1, setPoint1] = useState(0);
   const [point2, setPoint2] = useState(0);
   const [game1, setGame1] = useState(0);
@@ -117,7 +115,7 @@ export function Home() {
 		<Container>
 		<TimeView>
 		  <ViewRow>
-			<Icon name='alarm' size={20} color="#000000" />
+			
 			<Stopwatch start={start && !paused} reset={!start} options={options} />
 		  </ViewRow>
 		</TimeView>
@@ -166,7 +164,7 @@ export function Home() {
   
 		<ResetScore>
         <ViewRow>
-          <Icon name='restore' size={20} color="#000000" />
+         
           <Time onPress={voltarPontos}>Voltar pontuação</Time>
         </ViewRow>
       </ResetScore>
