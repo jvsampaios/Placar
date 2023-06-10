@@ -25,9 +25,9 @@ export function Home() {
   }
 
   function voltarPontos() {
-    if (lastPlayer === 'player1') {
+    if (lastPlayer === 'player1' && point1 > 0) {
       setPoint1(point1 - 1);
-    } else if (lastPlayer === 'player2') {
+    } else if (lastPlayer === 'player2' && point2 > 0) {
       setPoint2(point2 - 1);
     }
   }
